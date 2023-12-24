@@ -1,0 +1,50 @@
+﻿<Window x:Class="WPFViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFViewer"
+        xmlns:views="clr-namespace:WPFViewer.Views"
+        xmlns:viewModels="clr-namespace:WPFViewer.ViewModels"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="PDF Translator" Height="650" Width="700"
+        Name="MainWindowElement"
+        Background="#F8F8F8">
+
+    <Window.DataContext>
+        <viewModels:MainWindowViewModel />
+    </Window.DataContext>
+    <Window.InputBindings>
+        <KeyBinding Command="{Binding BindKeyCommand}"
+                    Key="B"/>
+        <MouseBinding Command="{Binding BindMouseCommand}"
+                      Gesture="Ctrl+WheelClick" />
+    </Window.InputBindings>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <views:MainView Grid.Row="0" Grid.Column="1"/>
+        <Grid Grid.Row="0" Grid.Column="2" Visibility="{Binding IsOptionsVisible}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <views:OptionsView Grid.Row="0" Grid.Column="0"/>
+        </Grid>
+
+        <Button Name="UncoverButton" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Row="0" Grid.Column="0" Command="{Binding ShowHideOptionsCommand}">
+            <Image Source="/WPFViewer;component/Views/data/options.png" Width="20"></Image>
+        </Button>
+    </Grid>
+</Window>

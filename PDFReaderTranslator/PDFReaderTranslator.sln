@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFReaderTranslator", "PDFReaderTranslator.csproj", "{E44E8E36-BAEB-41E9-8B0E-99BAB8D44AEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFReader", "..\PDFReader\PDFReader.csproj", "{D52D5717-F79B-4C7D-ADA3-DCA2225EE1B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFViewer", "..\WPFViewer\WPFViewer.csproj", "{353059A0-5030-4ECE-88FA-157A2FEEF784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Translator", "..\Translator\Translator.csproj", "{EFA99451-2519-45B3-AD29-BE890BC684E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "..\Logger\Logger.csproj", "{E7FDCD46-EDAD-4AFB-B6E2-5CDA3EBF6F9E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PDFTranslatorSetup", "..\PDFTranslatorSetup\PDFTranslatorSetup.vdproj", "{5D2D948F-9D8E-4B43-9A4C-B5481B54F98E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E44E8E36-BAEB-41E9-8B0E-99BAB8D44AEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E44E8E36-BAEB-41E9-8B0E-99BAB8D44AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E44E8E36-BAEB-41E9-8B0E-99BAB8D44AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E44E8E36-BAEB-41E9-8B0E-99BAB8D44AEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D52D5717-F79B-4C7D-ADA3-DCA2225EE1B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D52D5717-F79B-4C7D-ADA3-DCA2225EE1B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D52D5717-F79B-4C7D-ADA3-DCA2225EE1B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D52D5717-F79B-4C7D-ADA3-DCA2225EE1B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{353059A0-5030-4ECE-88FA-157A2FEEF784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{353059A0-5030-4ECE-88FA-157A2FEEF784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{353059A0-5030-4ECE-88FA-157A2FEEF784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{353059A0-5030-4ECE-88FA-157A2FEEF784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFA99451-2519-45B3-AD29-BE890BC684E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFA99451-2519-45B3-AD29-BE890BC684E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFA99451-2519-45B3-AD29-BE890BC684E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFA99451-2519-45B3-AD29-BE890BC684E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7FDCD46-EDAD-4AFB-B6E2-5CDA3EBF6F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7FDCD46-EDAD-4AFB-B6E2-5CDA3EBF6F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7FDCD46-EDAD-4AFB-B6E2-5CDA3EBF6F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7FDCD46-EDAD-4AFB-B6E2-5CDA3EBF6F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D2D948F-9D8E-4B43-9A4C-B5481B54F98E}.Debug|Any CPU.ActiveCfg = Debug
+		{5D2D948F-9D8E-4B43-9A4C-B5481B54F98E}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F26C8CF9-4806-420B-8467-DE445E03BA12}
+	EndGlobalSection
+EndGlobal
